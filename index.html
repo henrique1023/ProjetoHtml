@@ -2,11 +2,24 @@
 <html>
     <head>
         <title>Primeira pagina</title>
+        <style>
+            #cardapio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #dbb3b3;
+            }
+            #pedido {
+                background-color: #f2f2f2;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        </style>
     </head>
     <body>
         <h1>Bem vindo a pizzaria</h1>
-        <div>
-            <h2>Cardapio</h2>
+        <div id="cardapio">
+            <h2>Cardapio principal</h2>
             <ul>
                 <li>Calabresa</li>
                 <li>Frango</li>
@@ -15,6 +28,13 @@
                 <li>Quatro Queijos</li>
                 <li>Napolitana</li>
             </ul>
+        </div>
+        <div id="pedido">
+            <h2>Pedido</h2>
+            <p>Escolha uma opção</p>
+            <input type="text" id="opcao">
+            <button id="botao">Enviar</button>
+            <p id="resultado"></p>
         </div>
     </body>
 </html>
